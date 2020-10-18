@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>drag & drop rpg</title>
+</head>
+<body>
+   <article class="container">
+    <div class="container__items">
+        <ul class="container__items__list">
+            <li class="container__items__list__item" id="js--power" ondragstart="onDragStart(event)" ondragend="onDragEnd(event)" draggable="true">Power</li>
+            <li class="container__items__list__item" id="js--head--armor" ondragstart="onDragStart(event)" ondragend="onDragEnd(event)" draggable="true">Head Armor</li>
+            <li class="container__items__list__item" id="js--health" ondragstart="onDragStart(event)" ondragend="onDragEnd(event)" draggable="true">Health</li>
+            <li class="container__items__list__item" id="js--mana" ondragstart="onDragStart(event)" ondragend="onDragEnd(event)" draggable="true">Mana</li>
+            <li class="container__items__list__item" id="js--berries" ondragstart="onDragStart(event)" ondragend="onDragEnd(event)" draggable="true">Berries</li>
+        </ul>
+    </div>
+    <div class="container__character" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)" ondrop="onDrop(event)">
+        <div class="container__character__head"></div>
+        <div class="container__character__body"></div>
+    </div>
+   </article> 
+
+
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
